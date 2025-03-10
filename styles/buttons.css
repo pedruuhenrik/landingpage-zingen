@@ -30,11 +30,11 @@
 }
 .btn-sm {
     font-size: var(--fs-sm);
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
 }
 .btn-md {
     font-size: var(--fs-base);
-    padding: .75rem 1.5rem;
+    padding: 0.75rem 1.5rem;
 }
 .btn-lg {
     font-size: 1.125rem;
@@ -48,15 +48,18 @@
         content: "";
         position: absolute;
         border-radius: inherit;
-        inset: 0,09375rem;
+        inset: 0.09375rem;
         background-color: var(--bg-color);
     }
+
+
     &::after {
         content: attr(aria-label);
         background: var(--btn-bg-color);
         --webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+        position: relative;
         z-index: 1;
     }
 }
